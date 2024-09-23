@@ -40,20 +40,20 @@
 </head>
 
 <body>
-<?php
+    <?php
 
-include 'partials/header2.php';
+    include 'partials/header2.php';
 
-?>
+    ?>
 
     <div class="header">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="heading inter">Hire talented developers 
-                    from just $300/per month</h1>
+                    <h1 class="heading inter">Hire talented developers
+                        from just $300/per month</h1>
                     <p class="inter">Connect directly with top-tier developers with exceptional skills & honest pricing.
-                    ZERO fees for both the company and developer.</p>
+                        ZERO fees for both the company and developer.</p>
                     <div class="inlinef">
                         <a href="register"><button class="btn btn-primary" id="">Get Hired</button></a>
                     </div>
@@ -69,15 +69,18 @@ include 'partials/header2.php';
                 <div class="col-md-4 col-12">
                     <label for="sortBy" class="forn-label1 d-none3">Sort By :</label>
                     <!-- <select class="form-control h-3" name="sortBy" id="sortBy" onchange="this.form.submit()">
-                        <option value="highest" <?php if ($sortBy == 'highest') echo 'selected'; ?>>Salary - Highest</option>
-                        <option value="lowest" <?php if ($sortBy == 'lowest') echo 'selected'; ?>>Salary - Lowest</option>
-                        <option value="none" <?php if ($sortBy == 'none') echo 'selected'; ?>>Default Order</option>
+                        <option value="highest" <?php if ($sortBy == 'highest')
+                            echo 'selected'; ?>>Salary - Highest</option>
+                        <option value="lowest" <?php if ($sortBy == 'lowest')
+                            echo 'selected'; ?>>Salary - Lowest</option>
+                        <option value="none" <?php if ($sortBy == 'none')
+                            echo 'selected'; ?>>Default Order</option>
                     </select> -->
                 </div>
             </div>
         </form>
     </div>
-    
+
 
 
     <!-- <div class="container d-none3">
@@ -86,9 +89,12 @@ include 'partials/header2.php';
                 <div class="col p-0">
                     <label for="sortBy" class="sr-only">Sort By</label>
                     <select class="form-control form-control1 h-3" name="sortBy" id="sortBy">
-                        <option value="highest" <?php if ($sortBy == 'highest') echo 'selected'; ?>>Salary - Highest</option>
-                        <option value="lowest" <?php if ($sortBy == 'lowest') echo 'selected'; ?>>Salary - Lowest</option>
-                        <option value="none" <?php if ($sortBy == 'none') echo 'selected'; ?>>Default Order</option>
+                        <option value="highest" <?php if ($sortBy == 'highest')
+                            echo 'selected'; ?>>Salary - Highest</option>
+                        <option value="lowest" <?php if ($sortBy == 'lowest')
+                            echo 'selected'; ?>>Salary - Lowest</option>
+                        <option value="none" <?php if ($sortBy == 'none')
+                            echo 'selected'; ?>>Default Order</option>
                     </select>
                 </div>
                 <div class="col-auto p-0">
@@ -97,7 +103,7 @@ include 'partials/header2.php';
             </div>
         </form>
     </div> -->
-    
+
     <br>
 
     <div class="container">
@@ -107,69 +113,162 @@ include 'partials/header2.php';
             // if ($result->num_rows > 0) {
             //     while ($row = $result->fetch_assoc()) {
             //         ?>
-                    <div class="col-md-3 developer-card-wrapper" id="hire-now">
-                        <div class="developer-card">
-                            <div class="row d-none2">
-                                <div class="col-md-6">
-                                    <p>$/pm</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <p> Years</p>
-                                </div>
-                            </div>
-                            <ul class="gap-60 d-flex justify-content-between d-none1 mt-15">
-                                <p>$/pm</p>
-                                <li><p> Years</p></li>
-                            </ul>
-                            <img src="assets/img/">
-                            <h5></h5>
-                            <p class="p3"></p>
-                            <p class="p2"></p>
-                            <div class="rating">
-                                <img class="rating1" src="assets/img/stars.png" alt="">
-                            </div>
-                            <div class="whatsapp-btn">
-                                Contact Me
-                                <a href="https://api.whatsapp.com/send/?phone=<?php echo htmlspecialchars($row["phone"]); ?>&text=I found you on MonthlyStaff.com&app_absent=0"><img class="w-29" src="assets/img/whatsapp.jpeg" alt=""></a> 
-                                <a href="<?php echo htmlspecialchars($row["linkedin_link"]); ?>"> <img class="w-29" src="assets/img/linkedin.jpeg" alt=""></a>
-                            </div>
+            <div class="col-md-3 developer-card-wrapper" id="hire-now">
+                <div class="developer-card">
+                    <div class="row d-none2">
+                        <div class="col-md-6">
+                            <p>$/pm</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p> Years</p>
                         </div>
                     </div>
-                  
+                    <ul class="gap-60 d-flex justify-content-between d-none1 mt-15">
+                        <p>$/pm</p>
+                        <li>
+                            <p> Years</p>
+                        </li>
+                    </ul>
+                    <img src="assets/img/">
+                    <h5></h5>
+                    <p class="p3"></p>
+                    <p class="p2"></p>
+                    <div class="rating">
+                        <img class="rating1" src="assets/img/stars.png" alt="">
+                    </div>
+                    <div class="whatsapp-btn">
+                        Contact Me
+                        <a
+                            href="https://api.whatsapp.com/send/?phone=<?php echo htmlspecialchars($row["phone"]); ?>&text=I found you on MonthlyStaff.com&app_absent=0"><img
+                                class="w-29" src="assets/img/whatsapp.jpeg" alt=""></a>
+                        <a href="<?php echo htmlspecialchars($row["linkedin_link"]); ?>"> <img class="w-29"
+                                src="assets/img/linkedin.jpeg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <br><br>
     </div>
 
+    <div class="container">
+        <div class="row">
+            <!-- Tutor 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="video-container">
+                        <!-- Embedded YouTube Video -->
+                        <iframe src="https://www.youtube.com/embed/example1" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Gary Lopez</h5>
+                        <span class="badge bg-primary">Accent: American</span>
+                        <p class="card-text">100% positive reviews</p>
+                        <p class="card-text"><strong>Speaks:</strong> Spanish</p>
+                        <a href="#" class="btn btn-outline-primary">See Profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tutor 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="video-container">
+                        <!-- Embedded YouTube Video -->
+                        <iframe src="https://www.youtube.com/embed/example2" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Tutor Ryan</h5>
+                        <span class="badge bg-success">Accent: Irish</span>
+                        <p class="card-text">100% positive reviews</p>
+                        <p class="card-text"><strong>Good with:</strong> All speaking levels</p>
+                        <a href="#" class="btn btn-outline-success">See Profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tutor 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="video-container">
+                        <!-- Embedded YouTube Video -->
+                        <iframe src="https://www.youtube.com/embed/example3" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Allison S</h5>
+                        <span class="badge bg-danger">Accent: British</span>
+                        <p class="card-text">99% positive reviews</p>
+                        <p class="card-text"><strong>Speaks:</strong> German, French</p>
+                        <a href="#" class="btn btn-outline-danger">See Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <style>
+
+.card {
+      margin: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: #f9f9f9;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .badge-custom {
+      background-color: #ffd700;
+      color: #000;
+    }
         .form-inline {
             display: flex;
             flex-wrap: nowrap;
             align-items: center;
             justify-content: space-between;
         }
-    
+
         .form-control1 {
             width: 100%;
         }
-    
+
         .btn-filter2 {
             width: 100%;
         }
-    
+
         /* Make sure the controls are responsive */
         @media (max-width: 576px) {
             .form-control1 {
                 font-size: 14px;
                 padding: 8px;
             }
+
             .btn-filter2 {
                 font-size: 14px;
                 padding: 8px;
             }
         }
-    
+
         @media (max-width: 375px) {
-            .form-control1, .btn-filter2 {
+
+            .form-control1,
+            .btn-filter2 {
                 font-size: 12px;
                 padding: 6px;
             }
@@ -185,7 +284,7 @@ include 'partials/header2.php';
 
     <script>
         // Ensure the sortBy parameter is reset to 'none' on page load
-        window.addEventListener('load', function() {
+        window.addEventListener('load', function () {
             const url = new URL(window.location);
             url.searchParams.set('sortBy', 'none');
             window.history.replaceState({}, '', url);
@@ -194,4 +293,3 @@ include 'partials/header2.php';
 </body>
 
 </html>
-
