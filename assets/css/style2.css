@@ -44,13 +44,13 @@ a.btn.btn-primary.me-2.m-b2:hover {
 }
 
 a.btn.btn-primary.me-2.m-b2:active {
-    background: #442988;
+    background: #F6B03E;
     color: white;
 }
 
 .navbar .btn-primary:hover {
-    background-color: #442988;
-    border-color: #442988;
+    background-color: #F6B03E;
+    border-color: #F6B03E;
     /* font-family: Inter; */
     font-size: 12px;
     font-weight: 500;
@@ -168,7 +168,7 @@ a.btn.btn-primary.me-2.m-b2:active {
 } */
 
 .navbar-nav .nav-link:hover {
-    color: #442988;
+    color: #F6B03E;
     text-decoration: underline;
 }
 
@@ -177,8 +177,8 @@ a.btn.btn-primary.me-2.m-b2:active {
 }
 
 .navbar .btn-primary {
-    background-color: #B59FEF;
-    border-color: #B59FEF;
+    background-color: #F6B03E;
+    border-color: #F6B03E;
     /* font-family: Inter; */
     font-size: 12px;
     font-weight: 500;
