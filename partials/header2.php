@@ -31,7 +31,7 @@
             </ul>
             <div class="inline-grid pr-15">
                 <a class="btn btn-primary me-2 m-b2" href="#">Login</a>
-                <a class="btn btn-primary" href="#">Register</a>
+                <a class="btn btn-primary" href="#0">Register</a>
             </div>
         </div>
     </nav>
