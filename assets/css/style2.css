@@ -11,11 +11,10 @@ body {
 
 
 .navbar-brand {
-    font-size: 1.5rem;
-    color: #333;
+    font-size: 20px;
+    color: #442988;
     font-weight: bold;
 }
-
 
 
 
@@ -178,8 +177,8 @@ a.btn.btn-primary.me-2.m-b2:active {
 }
 
 .navbar .btn-primary {
-    background-color: #442988;
-    border-color: #442988;
+    background-color: #B59FEF;
+    border-color: #B59FEF;
     /* font-family: Inter; */
     font-size: 12px;
     font-weight: 500;
@@ -216,9 +215,9 @@ a.btn.btn-primary.me-2.m-b2:active {
     padding-bottom: 42px;
 }
 .heading {
-    font-size: 68px;
-    font-weight: 700;
-    line-height: 80px;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 70px;
     /* letter-spacing: -2.240000009536743px; */
     text-align: center;
     margin-left: auto;
@@ -368,6 +367,18 @@ img.rating1 {
 }
 
 @media (min-width: 320px) and (max-width:480px){
+
+    .card-title {
+        margin-bottom: var(--bs-card-title-spacer-y);
+        
+        font-size: 22px !important;
+    }
+
+    .btn-outline-primary {
+       
+        width: 50% !important;
+        border-radius: 40px !important;
+    }
     .heading {
         font-size: 31px;
         font-weight: bold;

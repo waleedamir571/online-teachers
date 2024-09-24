@@ -1,6 +1,6 @@
 <?php
 
-
+include 'partials/header.php';
 
 // include 'backend/config/database.php';
 
@@ -25,21 +25,7 @@
 
 // ?>
 
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MonthlyStaff - Hire developers from $300 per month without fees</title>
-    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/style2.css">
-</head>
-
-<body>
     <?php
 
     include 'partials/header2.php';
@@ -50,10 +36,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="heading inter">Hire talented developers
-                        from just $300/per month</h1>
-                    <p class="inter">Connect directly with top-tier developers with exceptional skills & honest pricing.
-                        ZERO fees for both the company and developer.</p>
+                    <h1 class="heading inter">American English teachers for just $6 per lesson - learn English fast</h1>
+                    <p class="inter">Connect directly with top-tier teachers with exceptional skills & honest pricing.
+                        ZERO fees for both the company and teacher.</p>
                     <div class="inlinef">
                         <a href="register"><button class="btn btn-primary" id="">Get Hired</button></a>
                     </div>
@@ -67,7 +52,7 @@
         <form method="GET" action="">
             <div class="row mb-3">
                 <div class="col-md-4 col-12">
-                    <label for="sortBy" class="forn-label1 d-none3">Sort By :</label>
+                    <!-- <label for="sortBy" class="forn-label1 d-none3">Sort By :</label> -->
                     <!-- <select class="form-control h-3" name="sortBy" id="sortBy" onchange="this.form.submit()">
                         <option value="highest" <?php if ($sortBy == 'highest')
                             echo 'selected'; ?>>Salary - Highest</option>
@@ -106,7 +91,7 @@
 
     <br>
 
-    <div class="container">
+    <!-- <div class="container">
         <div class="row">
             <?php
             // Check if there are results and display them
@@ -138,10 +123,10 @@
                     </div>
                     <div class="whatsapp-btn">
                         Contact Me
-                        <a
-                            href="https://api.whatsapp.com/send/?phone=<?php echo htmlspecialchars($row["phone"]); ?>&text=I found you on MonthlyStaff.com&app_absent=0"><img
-                                class="w-29" src="assets/img/whatsapp.jpeg" alt=""></a>
-                        <a href="<?php echo htmlspecialchars($row["linkedin_link"]); ?>"> <img class="w-29"
+                        <a href="https://api.whatsapp.com/send/?phone=<?php echo htmlspecialchars($row[" phone"]);
+                            ?>&text=I found you on MonthlyStaff.com&app_absent=0"><img class="w-29"
+                                src="assets/img/whatsapp.jpeg" alt=""></a>
+                        <a href="<?php echo htmlspecialchars($row[" linkedin_link"]); ?>"> <img class="w-29"
                                 src="assets/img/linkedin.jpeg" alt=""></a>
                     </div>
                 </div>
@@ -149,7 +134,7 @@
 
         </div>
         <br><br>
-    </div>
+    </div> -->
 
     <div class="container">
         <div class="row">
@@ -157,16 +142,15 @@
             <div class="col-md-4">
                 <div class="card">
                     <div class="video-container">
-                        <!-- Embedded YouTube Video -->
-                        <iframe src="https://www.youtube.com/embed/example1" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                    
+                        <!-- YouTube Video Iframe, initially hidden -->
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/SoUZ3wovZAs?si=kImVfzGwydhHXt_t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Gary Lopez</h5>
                         <span class="badge bg-primary">Accent: American</span>
-                        <p class="card-text">100% positive reviews</p>
-                        <p class="card-text"><strong>Speaks:</strong> Spanish</p>
+                        <p class="card-text pt-3"> <i class="fa fa-thumbs-up" aria-hidden="true"></i> 100% positive reviews</p>
+                        <p class="card-text"><strong><i class="fa fa-signal" aria-hidden="true"></i>  Speaks:</strong> English</p>
                         <a href="#" class="btn btn-outline-primary">See Profile</a>
                     </div>
                 </div>
@@ -176,67 +160,71 @@
             <div class="col-md-4">
                 <div class="card">
                     <div class="video-container">
-                        <!-- Embedded YouTube Video -->
-                        <iframe src="https://www.youtube.com/embed/example2" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                    
+                        <!-- YouTube Video Iframe, initially hidden -->
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/_cAfSxeu_nY?si=4MGWs-045gUYV3YR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Tutor Ryan</h5>
-                        <span class="badge bg-success">Accent: Irish</span>
-                        <p class="card-text">100% positive reviews</p>
-                        <p class="card-text"><strong>Good with:</strong> All speaking levels</p>
-                        <a href="#" class="btn btn-outline-success">See Profile</a>
+                        <h5 class="card-title">Gary Lopez</h5>
+                        <span class="badge bg-primary">Accent: British</span>
+                        <p class="card-text pt-3"> <i class="fa fa-thumbs-up" aria-hidden="true"></i> 100% positive reviews</p>
+                        <p class="card-text"><strong><i class="fa fa-signal" aria-hidden="true"></i>  Speaks:</strong> English</p>
+                        <a href="#" class="btn btn-outline-primary">See Profile</a>
                     </div>
                 </div>
             </div>
 
             <!-- Tutor 3 -->
+
             <div class="col-md-4">
                 <div class="card">
                     <div class="video-container">
-                        <!-- Embedded YouTube Video -->
-                        <iframe src="https://www.youtube.com/embed/example3" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                    
+                        <!-- YouTube Video Iframe, initially hidden -->
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/SoUZ3wovZAs?si=kImVfzGwydhHXt_t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Allison S</h5>
-                        <span class="badge bg-danger">Accent: British</span>
-                        <p class="card-text">99% positive reviews</p>
-                        <p class="card-text"><strong>Speaks:</strong> German, French</p>
-                        <a href="#" class="btn btn-outline-danger">See Profile</a>
+                        <h5 class="card-title">Gary Lopez</h5>
+                        <span class="badge bg-primary">Accent: American</span>
+                        <p class="card-text pt-3"> <i class="fa fa-thumbs-up" aria-hidden="true"></i> 100% positive reviews</p>
+                        <p class="card-text"><strong><i class="fa fa-signal" aria-hidden="true"></i>  Speaks:</strong> English</p>
+                        <a href="#" class="btn btn-outline-primary">See Profile</a>
                     </div>
                 </div>
             </div>
+           
         </div>
     </div>
 
     <style>
+        .card {
+            margin: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #f9f9f9;
+        }
 
-.card {
-      margin: 20px;
-      border-radius: 10px;
-      overflow: hidden;
-      background-color: #f9f9f9;
-    }
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%; /* 16:9 aspect ratio */
-      height: 0;
-      overflow: hidden;
-    }
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-    .badge-custom {
-      background-color: #ffd700;
-      color: #000;
-    }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .badge-custom {
+            background-color: #ffd700;
+            color: #000;
+        }
+
         .form-inline {
             display: flex;
             flex-wrap: nowrap;
@@ -275,21 +263,8 @@
         }
     </style>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
+<?php
 
-    <script>
-        // Ensure the sortBy parameter is reset to 'none' on page load
-        window.addEventListener('load', function () {
-            const url = new URL(window.location);
-            url.searchParams.set('sortBy', 'none');
-            window.history.replaceState({}, '', url);
-        });
-    </script>
-</body>
+include 'partials/footer.php';
 
-</html>
+?>
