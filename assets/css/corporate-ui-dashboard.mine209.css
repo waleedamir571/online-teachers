@@ -2978,9 +2978,9 @@ textarea.form-control.is-invalid {
 .btn-check:focus + .btn,
 .btn:focus,
 .btn:hover {
-  color: var(--bs-btn-hover-color);
-  background-color: var(--bs-btn-hover-bg);
-  border-color: var(--bs-btn-hover-border-color);
+  color: #F6B03E;
+  background-color: #F6B03E;
+  border-color: #F6B03E;
 }
 .btn-check:focus + .btn,
 .btn:focus {
@@ -16574,8 +16574,8 @@ fieldset:disabled .btn {
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active,
 .show > .btn-primary.dropdown-toggle {
-  color: color-yiq(#774dd3);
-  background-color: #774dd3;
+  color: white;
+  background-color: #F6B03E;
 }
 .btn-secondary:hover {
   background-color: #64748b;
