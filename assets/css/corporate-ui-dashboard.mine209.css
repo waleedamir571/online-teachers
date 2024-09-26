@@ -105,9 +105,9 @@
 }
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
-  font-size: var(--bs-body-font-size);
-  font-weight: var(--bs-body-font-weight);
+ 
+  
+ 
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
@@ -9402,6 +9402,10 @@ fieldset:disabled .btn {
   .float-sm-start {
     float: left !important;
   }
+
+  .mt-8 {
+    margin-top: 1rem !important;
+}
   .float-sm-end {
     float: right !important;
   }
@@ -18523,6 +18527,10 @@ hr.horizontal.gray-light {
   .navbar-vertical.navbar-expand-sm.fixed-end {
     right: 0;
   }
+
+  .mt-8 {
+    margin-top: 1rem !important;
+}
   .navbar-vertical.navbar-expand-sm .navbar-nav .nav-link {
     padding-top: 0.625rem;
     padding-bottom: 0.625rem;

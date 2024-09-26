@@ -142,7 +142,8 @@ a.btn.btn-primary.me-2.m-b2:active {
     font-weight: 700;
     line-height: 24px;
     text-align: center;
-    color: #442988;
+    color: #F6B03E;
+
 }
 .inlinef {
     display: inline;
@@ -525,8 +526,8 @@ img.rating1 {
     }
 
     .navbar .btn-primary {
-        background-color: #442988;
-        border-color: #442988;
+        background-color: #F6B03E;
+        border-color: #F6B03E;
         /* font-family: Inter; */
         font-size: 12px;
         font-weight: 500;

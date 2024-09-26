@@ -7,6 +7,60 @@ body {
     background: #F6B03E;
 }
 
+.mw-10{
+    max-width: 40%;
+}
+
+.navbar {
+    display: flex !important;
+    justify-content: space-between !important; /* Space between logo and nav items */
+    align-items: center !important; /* Vertically center items */
+}
+
+.navbar-brand {
+    display: flex !important;
+    align-items: center !important; /* Center logo vertically */
+}
+
+.navbar-nav {
+    flex-grow: 1 !important; /* Allow nav items to take available space */
+    justify-content: center !important; /* Center nav items */
+}
+
+.nav-item {
+    margin: 0 15px !important       ; /* Space between nav items */
+}
+
+.inline-grid {
+    display: flex !important; 
+    align-items: center !important; 
+}
+
+@media (max-width: 991px) { /* Adjust max-width as needed for smaller screens */
+    .navbar {
+        display: flex !important;
+        justify-content: space-between !important;
+        border-radius: 1.5rem;
+        box-shadow: 0px 0px 0px 8px rgba(255, 255, 255, 0.12), 0px 24px 32px -24px rgba(60, 27, 156, 0.16), 0px 32px 56px -32px rgba(60, 27, 156, 0.32) !important;
+    }
+
+    .navbar-brand {
+        margin-right: auto !important; /* Align the logo to the left */
+    }
+
+    .navbar-toggler {
+        margin-left: auto !important; /* Align the toggle button to the right */
+    }
+
+    .mw-10 {
+        max-width: 22%;
+        padding-left: 12px;
+    }
+
+  
+
+}
+
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     margin-bottom: .5rem;
